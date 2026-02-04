@@ -4,47 +4,39 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.File;
-
 public class LoginTest {
 
     @Test
-    public void loginAutomationTest() throws Exception {
+    public void loginAutomationTest() throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
+        driver.get("file:///C:/Users/LENOVO/OneDrive/Documents/Desktop/login.html");
 
-        File file = new File("login.html");
-        driver.get("file:///" + file.getAbsolutePath());
+        // 🔹 Test inputs (change these to check pass/fail)
+        String username = "wrong@gmail.com";   // change to valid later
+        String password = "123";               // change to valid later
 
-        // 🔁 CHANGE THESE VALUES TO SEE PASS / FAIL
-        String username = "bhagyagmail.com";
-        String password = "Admin@123";
-
+        // 🔹 Enter values
         driver.findElement(By.id("email")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
-        driver.findElement(By.tagName("button")).click();
+        driver.findElement(By.id("loginBtn")).click();
 
         Thread.sleep(2000);
 
-        String message =
-                driver.findElement(By.id("message")).getText();
+        // 🔹 UI RESULT (ALWAYS success)
+        String uiResult = driver.findElement(By.id("result")).getText();
+        Assert.assertEquals(uiResult, "Login Successful");
 
-        // ✅ LOGIN PAGE ALWAYS SUCCESS
-        Assert.assertEquals(message, "Login Successful");
+        // 🔥 TESTCASE LOGIC (IMPORTANT PART)
+        boolean validCredentials =
+                username.equals("admin@gmail.com") &&
+                password.equals("admin123");
 
-        // 🔥 TEST CASE LOGIC
-        if (username.equals("bhagya@gmail.com")
-                && password.equals("bhagya@5656")) {
-
-            System.out.println("VALID INPUT → TEST PASS");
-            Assert.assertTrue(true);
-
-        } else {
-
-            System.out.println("INVALID INPUT → TEST FAIL");
-            Assert.fail("Invalid credentials given");
+        if (!validCredentials) {
+            Assert.fail("❌ Invalid username/password - Testcase Failed");
         }
 
+        // else → testcase PASS automatically
         driver.quit();
     }
 }

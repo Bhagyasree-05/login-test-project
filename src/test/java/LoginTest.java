@@ -33,8 +33,8 @@ public class LoginTest {
         Assert.assertEquals(message, "Login Successful");
 
         // 🔥 TEST CASE LOGIC
-        if (username.equals("admin@gmail.com")
-                && password.equals("Admin@123")) {
+        if (username.equals("bhagya@gmail.com")
+                && password.equals("bhagya@5656")) {
 
             System.out.println("VALID INPUT → TEST PASS");
             Assert.assertTrue(true);

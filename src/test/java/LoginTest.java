@@ -19,8 +19,8 @@ public class LoginTest {
 
         Thread.sleep(1000); // page load wait
 
-        String username = "admin@gmail.com";   // change to wrong to see FAIL
-        String password = "admin123";
+        String username = "bhagya@gmail.com";   // change to wrong to see FAIL
+        String password = "bhagya@56";
 
         driver.findElement(By.id("email")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);

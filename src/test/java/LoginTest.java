@@ -30,7 +30,7 @@ public class LoginTest {
 
         // 🔥 ONLY TESTCASE decides pass/fail
         boolean isValidUser =
-                username.equals("admin@gmail.com") &&
+                username.equals("admingmail.com") &&
                 password.equals("admin123");
 
         Assert.assertTrue(isValidUser, "Invalid credentials given");

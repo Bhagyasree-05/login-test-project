@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-04T07:28:23 IST" name="Surefire suite" finished-at="2026-02-04T07:28:30 IST" duration-ms="7380">
+  <suite started-at="2026-02-04T07:30:13 IST" name="Surefire suite" finished-at="2026-02-04T07:30:20 IST" duration-ms="6953">
     <groups>
     </groups>
-    <test started-at="2026-02-04T07:28:23 IST" name="Surefire test" finished-at="2026-02-04T07:28:30 IST" duration-ms="7380">
+    <test started-at="2026-02-04T07:30:13 IST" name="Surefire test" finished-at="2026-02-04T07:30:20 IST" duration-ms="6953">
       <class name="LoginTest">
-        <test-method signature="loginAutomationTest()[pri:0, instance:LoginTest@27c6e487]" started-at="2026-02-04T07:28:23 IST" name="loginAutomationTest" finished-at="2026-02-04T07:28:30 IST" duration-ms="7188" status="FAIL">
+        <test-method signature="loginAutomationTest()[pri:0, instance:LoginTest@27c6e487]" started-at="2026-02-04T07:30:13 IST" name="loginAutomationTest" finished-at="2026-02-04T07:30:20 IST" duration-ms="6874" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#loginBtn"}
   (Session info: chrome=144.0.7559.110)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [478db7582b901af41f4cacbd1c5acc4f, findElement {using=id, value=email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63009}, goog:processID: 7620, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63009/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 478db7582b901af41f4cacbd1c5acc4f]]>
+Command: [654f78d60ffa1027501ec86f01d28da1, findElement {using=id, value=loginBtn}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51622}, goog:processID: 19044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51622/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 654f78d60ffa1027501ec86f01d28da1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#loginBtn"}
   (Session info: chrome=144.0.7559.110)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [478db7582b901af41f4cacbd1c5acc4f, findElement {using=id, value=email}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63009}, goog:processID: 7620, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63009/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 478db7582b901af41f4cacbd1c5acc4f
+Command: [654f78d60ffa1027501ec86f01d28da1, findElement {using=id, value=loginBtn}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51622}, goog:processID: 19044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51622/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 654f78d60ffa1027501ec86f01d28da1
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -41,10 +41,10 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
 at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at LoginTest.loginAutomationTest(LoginTest.java:20)
+at LoginTest.loginAutomationTest(LoginTest.java:27)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

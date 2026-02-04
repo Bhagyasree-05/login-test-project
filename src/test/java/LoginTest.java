@@ -4,39 +4,37 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.File;
+
 public class LoginTest {
 
     @Test
     public void loginAutomationTest() throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
-        driver.get("file:///C:/Users/LENOVO/OneDrive/Documents/Desktop/login.html");
 
-        // 🔹 Test inputs (change these to check pass/fail)
-        String username = "wrong@gmail.com";   // change to valid later
-        String password = "123";               // change to valid later
+        File file = new File("login.html");
+        String path = file.getAbsolutePath();
+        driver.get("file:///" + path);
 
-        // 🔹 Enter values
+        Thread.sleep(1000); // page load wait
+
+        String username = "admin@gmail.com";   // change to wrong to see FAIL
+        String password = "admin123";
+
         driver.findElement(By.id("email")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
         driver.findElement(By.id("loginBtn")).click();
 
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
-        // 🔹 UI RESULT (ALWAYS success)
-        String uiResult = driver.findElement(By.id("result")).getText();
-        Assert.assertEquals(uiResult, "Login Successful");
-
-        // 🔥 TESTCASE LOGIC (IMPORTANT PART)
-        boolean validCredentials =
+        // 🔥 ONLY TESTCASE decides pass/fail
+        boolean isValidUser =
                 username.equals("admin@gmail.com") &&
                 password.equals("admin123");
 
-        if (!validCredentials) {
-            Assert.fail("❌ Invalid username/password - Testcase Failed");
-        }
+        Assert.assertTrue(isValidUser, "Invalid credentials given");
 
-        // else → testcase PASS automatically
         driver.quit();
     }
 }

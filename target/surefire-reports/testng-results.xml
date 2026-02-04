@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-04T12:19:49 IST" name="Surefire suite" finished-at="2026-02-04T12:19:59 IST" duration-ms="10733">
+  <suite started-at="2026-02-04T12:21:25 IST" name="Surefire suite" finished-at="2026-02-04T12:21:33 IST" duration-ms="7741">
     <groups>
     </groups>
-    <test started-at="2026-02-04T12:19:49 IST" name="Surefire test" finished-at="2026-02-04T12:19:59 IST" duration-ms="10733">
+    <test started-at="2026-02-04T12:21:25 IST" name="Surefire test" finished-at="2026-02-04T12:21:33 IST" duration-ms="7741">
       <class name="LoginTest">
-        <test-method signature="loginAutomationTest()[pri:0, instance:LoginTest@27c6e487]" started-at="2026-02-04T12:19:49 IST" name="loginAutomationTest" finished-at="2026-02-04T12:19:59 IST" duration-ms="10648" status="FAIL">
+        <test-method signature="loginAutomationTest()[pri:0, instance:LoginTest@27c6e487]" started-at="2026-02-04T12:21:25 IST" name="loginAutomationTest" finished-at="2026-02-04T12:21:33 IST" duration-ms="7668" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Invalid credentials given expected [true] but found [false]]]>
